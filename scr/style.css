@@ -1,0 +1,257 @@
+
+
+body{  
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.75 ),rgba(0,0,0,0.75 )), url(../img/banner.png);
+}
+
+.banner{
+   
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 3em;
+    width: 10vw;
+    
+}
+
+.icone{
+   position: absolute; 
+   flex-direction: row;
+   margin-left: 20%;
+   
+}
+
+.navbar-itens{
+    font-size: 16px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #8d2121 ;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:50% 50%;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.container__aviso{
+    text-align: justify;
+    line-height: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0 2em 2.5em;
+}
+
+.container__imagem{ 
+    width: 25vw;
+    margin:1em 0 2em 3em;
+}
+
+.container__caixa{
+    width: 100%;
+    margin-left:  2.6em;
+}
+
+.container__botao{
+    border-radius: 2px;
+    margin-left: 3em;
+    display: inline;
+    font: 14px;
+    background-color: #ffffff;
+    padding: 15px 15px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.botao_primario{
+    padding: 11px 40px;
+}
+
+
+.botao_secundario{
+    
+    padding: 13px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.288);
+    text-decoration: none;
+}
+
+
+.container__botao:hover{
+    background-color: #8d2121;
+    color: white;
+    transition: all 1s;
+    border-radius: 15px;
+}
+
+.container__botao:active{
+    background-color: rgba(124, 10, 10, 0.644);
+    color: white;
+    transition: none;
+}
+
+
+.container__secundario{
+    background: black;
+}
+
+.minha-lista{
+    width: 90%;
+    margin: auto;
+    padding: 0  0 3em 3em;
+}
+
+.titulo-minha-lista{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 95%;
+    margin-left: 2.5em;
+}
+
+.titulo-top10{  
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 2.5em;
+}
+
+@media screen and (max-width: 980px){
+    .navbar{
+        width: 100%;
+        margin: auto;
+        padding: 35px 0;
+        display: block;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .icone{
+        margin: 0 4em;
+    }
+
+    .logo{
+        margin: 10px;
+        width: 20vw;
+        cursor: pointer;
+    }
+
+    .fonte{ 
+        justify-content: space-between;
+        font-size: 30px;
+    }
+
+    .container__caixa{
+        display: contents;
+    }
+
+    .container__imagem{
+        width: 100%;
+        height: 60%;
+        margin-left: 1em;
+    }
+
+    .container__aviso{
+        position: absolute;
+        font-size: 40px;
+        text-align: justify;
+        line-height: 1em;
+        margin: 10em 0 2em 0;
+        top: 100%;
+    }
+
+    .container__botao{
+        
+        margin:  10em 0 0 0;
+    }
+
+    .botao_primario{
+        border-radius: 25px;
+        text-align: center;
+        font-size: 40px;
+        padding: 60px 150px; 
+        position: absolute;
+        margin-left: 10px;
+        
+        
+    }
+
+    .botao_secundario{
+        border-radius: 25px;
+        text-align: center;
+        font-size: 40px;
+        padding: 60px 2px;
+        margin-right: 10px;
+        
+    }
+
+    .minha-lista{
+        width: 90%;
+        height: 10vh;
+        padding: 0  0 10em 5em;
+    }
+
+    .titulo-minha-lista{
+        font-size: 30px;
+    }
+
+    .titulo-top10{
+        font-size: 30px;
+    }
+}
+
